@@ -1,0 +1,36 @@
+.wrapper{
+	width: 50%;
+	margin-left: 5%;
+	background-color: #42f46e;
+}
+
+.nav-bar{
+	width: 20%;
+	border-radius: 18px;
+	background-color: #42f46e;
+}
+
+.nav-bar > ul > li{
+	list-style-type: none;
+	height: 20px;
+}
+
+.nav-bar > ul > li > a{
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:link{
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;		
+} 
+
+a:hover{
+	font-size: 15px;
+	font-weight: bold;
+	color: #42f46e;
+	background-color: #ffffff
+}
