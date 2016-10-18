@@ -3,12 +3,15 @@
 	margin-left: 5%;
 	background-color: #42f46e;
 	height: 250px;
+	display: inline-block;
 }
 
 .nav-bar{
 	width: 20%;
+	height: 250px;
 	border-radius: 18px;
 	background-color: #42f46e;
+	display: inline-block;
 }
 
 .nav-bar > ul > li{
