@@ -15,21 +15,60 @@
 	padding: 10px 0px 10px 5px;
 }
 
+.section > h2{
+	background-color: #530766;
+	color: #ffffff;
+	font-size: 15px;
+	height: 20px;
+	padding: 5px 0px 5px 5px;
+	text-transform: uppercase;
+}
+
 .opButton{
 	width: 150px;
 	height: 30px;
 	text-align: center;
 	color: #ffffff;
-	background-color: #7613c1;
+	background-color: #530766;
 	border: none;
 	font-weight: bold;
 	font-size: 15px;
 }
 
 .selectedButton{
-	background-color: #530766;	
+	background-color: #7613c1;	
 }
 
 .hidden{
 	display: none;
+}
+
+.submitButton{
+	background-color: #530766;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	border: none;
+	color: #ffffff;
+	width: 70px;
+	border-radius: 25px;
+}
+
+input:focus{
+	border-color: #530766;
+	outline: none;
+}
+table{
+	width: 100%;
+}
+
+.headerCol{
+	background-color: #530766; 
+	color: #ffffff;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+td{
+	width: 50%;
+	border-bottom: 1px solid black;
 }

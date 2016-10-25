@@ -3,36 +3,49 @@
 		<meta charset="UTF-8">
 		<title>Adminsitración de Inventario</title>
 		<link rel="stylesheet" href="css/administracion.css">
+		<script src="libs/jquery-3.1.1.min.js"></script>
 		<script src="js/front-manager.js"></script>
+		<script src="js/administracion-inv.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<section class="section" id="opMenu">
-				<button class="opButton selectedButton" id="AgregarCategoria" type="button" flag="1">Agregar Categor&iacute;a</button>
-				<button class="opButton" id="AgregarCategoria" type="button" flag="0">Agregar Categoria</button>
-				<button class="opButton" id="AgregarMaterial" type="button" flag="0">Agregar Material</button>
-				<button class="opButton" id="EliminarCategoria" type="button" flag="0">EliminarCategoria</button>
-				<button class="opButton" id="EliminarMaterial" type="button" flag="0">Agregar Categor&iacute;a</button>
+				<button class="opButton selectedButton" id="AgregarCategoria" type="button" data-flag="1">Agregar Categor&iacute;a</button>
+				<button class="opButton" id="AgregarMaterial" type="button" data-flag="0">Agregar Material</button>
+				<button class="opButton" id="EliminarCategoria" type="button" data-flag="0">Eliminar Categoria</button>
+				<button class="opButton" id="EliminarMaterial" type="button" data-flag="0">Eliminar Material</button>
 			</section>
-			<br>
-			<section class="seccion" id="AgregarCategoriaBlock">
-				Agregar Categoria
+			<br><br>
+			<section class="section" id="AgregarCategoriaBlock">
+				<h2>Agregar Categoria</h2><br><br>
+				<form id="formNuevaCategoria">
+					Ingrese el nombre de la nueva categor&iacute;a: 
+					<input type="text" id="nuevaCategoria" required><br><br>
+					<input type="submit" class="submitButton" value="Agregar">
+					<br><br>
+					<table id="catTable" class="hidden">
+						<tr>	
+							<td colspan="2" class="headerCol">Categorias</td>
+						</tr>
+						<tr>
+							<td>Nombre de la categoria</td>
+							<td>Fecha en que se agrego</td>
+						</tr>
+					</table>
+				</form>
 			</section>
-			<br>
-			<section class="seccion hidden" id="AgregarMaterialBlock">
-				Agregar Material
+			
+			<section class="section hidden" id="AgregarMaterialBlock">
+				<h2>Agregar Material</h2>
 			</section>
-			<br>
-			<section class="seccion hidden" id="EliminarCategoriaBlock">
-				Eliminar Categoria
+			
+			<section class="section hidden" id="EliminarCategoriaBlock">
+				<h2>Eliminar Categoria</h2>
 			</section>
-			<br>
-			<section class="seccion hidden" id="EliminarMaterialBlock">
-				Eliminar Material
+			
+			<section class="section hidden" id="EliminarMaterialBlock">
+				<h2>Eliminar Material</h2>
 			</section>
 		</div>
 	</body>
-	<script>
-		FrontMannager.setOpButtonsListeners();
-	</script>
 </html>
