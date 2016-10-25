@@ -1,0 +1,2 @@
+
+FrontMannager.setOpButtonsListeners();

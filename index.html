@@ -3,15 +3,36 @@
 		<meta charset="UTF-8">
 		<title>Adminsitración de Inventario</title>
 		<link rel="stylesheet" href="css/administracion.css">
+		<script src="js/front-manager.js"></script>
 	</head>
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="#">Crear Categoría</a></li>
-				<li><a href="#">Crear Sub-categoría</a></li>
-				<li><a href="#">Agregar Material</a></li>
-			</ul>
+		<div class="wrapper">
+			<section class="section" id="opMenu">
+				<button class="opButton selectedButton" id="AgregarCategoria" type="button" flag="1">Agregar Categor&iacute;a</button>
+				<button class="opButton" id="AgregarCategoria" type="button" flag="0">Agregar Categoria</button>
+				<button class="opButton" id="AgregarMaterial" type="button" flag="0">Agregar Material</button>
+				<button class="opButton" id="EliminarCategoria" type="button" flag="0">EliminarCategoria</button>
+				<button class="opButton" id="EliminarMaterial" type="button" flag="0">Agregar Categor&iacute;a</button>
+			</section>
+			<br>
+			<section class="seccion" id="AgregarCategoriaBlock">
+				Agregar Categoria
+			</section>
+			<br>
+			<section class="seccion hidden" id="AgregarMaterialBlock">
+				Agregar Material
+			</section>
+			<br>
+			<section class="seccion hidden" id="EliminarCategoriaBlock">
+				Eliminar Categoria
+			</section>
+			<br>
+			<section class="seccion hidden" id="EliminarMaterialBlock">
+				Eliminar Material
+			</section>
 		</div>
-		
 	</body>
+	<script>
+		FrontMannager.setOpButtonsListeners();
+	</script>
 </html>
